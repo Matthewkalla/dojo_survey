@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="container bg-dark bg-gradient p-3 pb-4">
+        <h1 class="text-primary">{{ name }}</h1>
+        <p class="text-light">Dojo Location:  {{ locations }}</p>
+        <p class="text-light">Favorite Language:  {{ language }}</p>
+        <p class="text-light">Comments:  {{ comments }}</p>
+        <hr class="bg-dark">
+        <a href="/">Home</a>
+    </div>
+
+</body>
+</html>

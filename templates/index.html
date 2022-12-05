@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="container bg-dark bg-gradient p-3 pb-4">
+        <h1 class="text-warning">Dojo Survey</h1>
+        <form class="text-light m-2" action="/process" method="post">
+            <label class="m-1" for="name">Name:</label><br>
+            <input type='text' name='name' id="name"><br>
+            <label class="m-1" for="locations">Select Location:</label><br>
+            <select class="m-1" name="locations", id="locations">
+                <option value="Seattle">Seattle</option>
+                <option value="Burbank">Burbank</option>
+                <option value="Sunnyvale">Sunnyvale</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Bellvue">Bellvue</option>
+            </select><br>
+            <label class="m-1" for="language">Favorite Language:</label><br>
+            <select class="m-1" name="language", id="language">
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Java">Java</option>
+                <option value="CSS">CSS</option>
+            </select><br>
+            <label class="m-1" for="comments">Comments:</label><br>
+            <input type="text" name="comments" id="comments">
+            <input class="btn bg-primary text-light mt-3" id="button1" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
